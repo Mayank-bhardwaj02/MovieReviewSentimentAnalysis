@@ -5,12 +5,6 @@ import pandas as pd
 data_url = "https://drive.google.com/uc?export=download&id=1dfH5owzJq9iXXVsfAX67WFUn2GQIbsbi"
 df = pd.read_csv(data_url)
 
-#Removing HTML tags from the dataframe
-from bs4 import BeautifulSoup
-def remove_html_tags(text):
-    return BeautifulSoup(text , 'lxml').get_text()
-df['review'] = df['review'].apply(remove_html_tags)
-
 
 #Cleaning the data
 df.dropna(inplace = True)
