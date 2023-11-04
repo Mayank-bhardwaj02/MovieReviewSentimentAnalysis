@@ -1,6 +1,6 @@
 # Movie Review Sentiment Analysis
 
-## Working Project : https://moviereviewsentimentanalysis.streamlit.app/
+## Working Project : https://moviereviewproject.streamlit.app
 
 ## Overview
 
